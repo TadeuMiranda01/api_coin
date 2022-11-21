@@ -20,6 +20,8 @@ class consumirapiController extends Controller
             $data = date('d-m-Y');
             $result = $client->coins()->getHistory($coin, $data);
             dd($result);
+            $result = $client->coins()->getHistory($coin, $data);
+            dd($result);
         }
     }
 }
